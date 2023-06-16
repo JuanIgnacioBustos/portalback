@@ -2,13 +2,13 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-import ProductManager from "./src/productManager.js";
+import ProductManager from ".productManager.js";
 const productManager = new ProductManager("products");
 
 // Extended para uso de querys
 app.use(express.urlencoded({ extended: true }));
 
-// Endpoint para mostrar los productos:
+// Middleware para uso de querys:
 app.get("/products", async (req, res) => {
 	try {
         const { limit } = req.query;

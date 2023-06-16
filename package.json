@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "main": "entrega1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server" : "nodemon src/app.js"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JuanIgnacioBustos/portalback.git"
   },
+  
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,6 +22,7 @@
   "keywords": [],
   "description": "",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
   }
 }
